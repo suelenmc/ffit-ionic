@@ -1,0 +1,17 @@
+<ion-view view-title="{{person.name}}">
+  <ion-content>
+    <div class="list card">
+      <div class="item">
+        <h2>{{person.name}}</h2>
+        <p>Popularidade: {{person.popularity}}</p>
+        </div>
+      </div>
+
+      <div class="item item-image">
+        <img class="full-image" ng-src="http://image.tmdb.org/t/p/w370/{{person.profile_path}}">
+      </div>
+
+      <!--<a class="item item-icon-left assertive subdued" href="#"> {{movie.vote_count}} Curtidas</a>-->
+    </div>
+  </ion-content>
+</ion-view>

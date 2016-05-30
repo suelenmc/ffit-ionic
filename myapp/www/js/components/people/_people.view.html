@@ -1,0 +1,10 @@
+<ion-view view-title="Popular people">
+  <ion-content>
+    <div class="row" style="flex-wrap: wrap">
+      <div class="col col-50" ng-repeat="person in people" ng-click='goState(person)'>
+        <img class="full-image" ng-src="http://image.tmdb.org/t/p/w370/{{person.profile_path}}">
+        <div class="caption">{{person.name}}</div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
