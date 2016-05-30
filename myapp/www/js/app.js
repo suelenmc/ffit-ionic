@@ -41,6 +41,16 @@ angular.module('moviesApp', ['ionic', 'starter.controllers', 'movie'])
     }
   })
 
+  .state('app.release', {
+    url: '/release',
+    views: {
+      'menuContent': {
+        templateUrl: 'js/components/movies/_movies.tobereleased.view.html',
+        controller: 'MovieReleaseController'
+      }
+    }
+  })
+
   .state('app.movie', {
     url: '/movie',
     params: {
